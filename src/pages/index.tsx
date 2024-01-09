@@ -1,4 +1,4 @@
-import styles from '@/styles/main.module.scss'
+import styles from '@/styles/Main.module.scss'
 import { useRouter } from 'next/router';
 
 //Change background color
