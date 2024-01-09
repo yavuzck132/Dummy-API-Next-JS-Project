@@ -41,8 +41,8 @@ const Post = () => {
                 <h2>{post.link}</h2>
                 <h2>{" Tags: "}</h2>
                 <div>
-                {post.tags.map(tag => {
-                    return <span>{tag}</span>
+                {post.tags.map((tag, index) => {
+                    return <span key={index}>{tag}</span>
                 })} 
                 </div>     
                 <h2>{" Text: "}</h2>              

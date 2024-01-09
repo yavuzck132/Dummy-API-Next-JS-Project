@@ -25,8 +25,8 @@ const PostListComponent: FunctionComponent<PostListProps> = (props) => {
                                     <h6>{(new Date(post.publishDate)).toString().slice().substring(0, 24)}</h6>
                                     <h4>{post.text}</h4>
                                     <div className={styles.tagWrapper}>
-                                        {post.tags.map((tag) => {
-                                            return <span>{tag}</span>
+                                        {post.tags.map((tag, index) => {
+                                            return <span key={index}>{tag}</span>
                                         })}
                                     </div>
                                     <h5>{`Likes: ` + post.likes.toString()}</h5>

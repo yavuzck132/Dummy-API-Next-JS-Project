@@ -204,7 +204,7 @@ const PostForm: FunctionComponent<PostProps> = (props) => {
                     <label>Tags</label>
                     <div className={styles.tagWrap}>
                         {postData.tags.map((tag, index) => {
-                            return <div className={styles.tagItemWrap}>
+                            return <div className={styles.tagItemWrap} key={index}>
                                 <input value={tag} onChange={(e) => {updateTag(index, e.target.value)}}/>
                                 <span onClick={()=>removeTag(index)}>X</span>
                             </div>
