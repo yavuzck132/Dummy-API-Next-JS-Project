@@ -1,0 +1,42 @@
+.container{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    img{
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+.infoContainer{    
+    margin: 10px;
+    background-color: white;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 180px minmax(min-content, 1fr);
+    padding: 5px;
+    > * {
+        padding: 10px;         
+    }
+    > :nth-child(2n){
+        color: #666666;
+    }
+    > :not(:nth-last-child(-n+2)){
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.buttonWrap{
+    button{
+        background-color: #2A324B;
+        margin: 0px 10px;
+        padding: 7px;
+        border-radius: 6px;
+        color: white;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

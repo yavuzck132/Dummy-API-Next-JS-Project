@@ -1,0 +1,42 @@
+.formWrap{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .formGroup{
+        margin: 5px;
+        label{
+            display: block;
+            margin-bottom: 1px;
+        }
+        input, select{
+            padding: 5px;
+            border-radius: 6px;
+            min-width: 300px;
+        }
+    }
+    .buttonWrap{
+        display: flex;
+        justify-content: center;
+        button{
+            margin: 0px 10px;
+            padding: 7px;
+            border-radius: 6px;
+            color: white;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .submitButton{
+            background-color: #2A324B;
+        }
+        .deleteButton{
+            background-color: #E53333;
+        }
+    }
+}
+
+.errorMessage{
+    color: red;
+}

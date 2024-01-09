@@ -1,0 +1,12 @@
+.buttonWrapper{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        width: 50px;
+        height: 25px;
+        margin: 0px 10px;
+        border-radius: 6px;
+    }
+}
